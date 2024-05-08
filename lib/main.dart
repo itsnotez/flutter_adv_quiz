@@ -5,21 +5,17 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Container(
+        body: Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 88, 9, 225),
-                  Color.fromARGB(255, 139, 97, 212)
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color.fromARGB(255, 92, 14, 225),
+                    Color.fromARGB(255, 164, 117, 245)
+                  ]),
             ),
-            child: const StartScreen(),
-          ),
-        ),
+            child: StartScreen()),
       ),
     ),
   );
